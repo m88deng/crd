@@ -11,8 +11,7 @@ export function Footer() {
   return (
     <footer className="bg-[var(--color-charcoal)] text-white">
       <div className="max-w-5xl mx-auto px-8 py-12">
-        {/* Navigation Links */}
-        <div className="flex items-center gap-6 mb-8 pb-8 border-b border-gray-600">
+        <div id="footer-navigation-links" className="flex items-center gap-6 mb-8 pb-8 border-b border-gray-600">
           {navLinks.map((link, index) => (
             <React.Fragment key={link.name}>
               <Link
@@ -28,8 +27,7 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Disclaimer */}
-        <div className="space-y-4 mb-8 text-sm text-gray-400 leading-relaxed">
+        <div id="footer-disclaimer" className="space-y-4 mb-8 text-sm text-gray-400 leading-relaxed">
           <p>
             <strong className="text-gray-300">Disclaimer:</strong> The content on this site is provided for informational and educational purposes only and does not constitute investment advice, financial advice, trading advice, or any other sort of advice. Nothing on this site constitutes a solicitation, recommendation, endorsement, or offer to buy or sell any securities or other financial instruments. All content is presented as of the date published or indicated and may be superseded by subsequent market events or for other reasons.
           </p>
@@ -38,8 +36,7 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Tagline */}
-        <div className="text-center pt-6 border-t border-gray-600 text-sm text-gray-400">
+        <div id="footer-tagline" className="text-center pt-6 border-t border-gray-600 text-sm text-gray-400">
           <p>© {new Date().getFullYear()} CRD. All rights reserved.</p>
           {/* <p>Independent Investment Research</p> */}
         </div>

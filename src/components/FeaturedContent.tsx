@@ -1,34 +1,15 @@
 import { ArrowRight } from 'lucide-react';
-
-interface ContentItem {
-  id: number;
-  title: string;
-  excerpt: string;
-  date: string;
-}
-
-const contentItems: ContentItem[] = [
-  {
-    id: 1,
-    title: "Q4 2025 Market Review: Navigating Rate Uncertainty",
-    excerpt: "A comprehensive analysis of market dynamics in the final quarter, examining the interplay between monetary policy expectations and equity valuations across sectors.",
-    date: "January 7, 2026"
-  },
-  {
-    id: 2,
-    title: "The Case for Quality: Defensive Positioning in Volatile Markets",
-    excerpt: "Exploring the attributes that distinguish resilient businesses during market turbulence, with a focus on cash flow generation and competitive moats.",
-    date: "December 28, 2025"
-  },
-  {
-    id: 3,
-    title: "Energy Transition: Separating Hype from Fundamental Value",
-    excerpt: "An evidence-based assessment of valuation multiples in renewable energy, examining which segments offer compelling risk-adjusted returns for patient capital.",
-    date: "December 15, 2025"
-  }
-];
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { generatePostUrl } from '../utils/slugify';
+import { outlookPosts } from '../data/marketOutlookPosts';
 
 export function FeaturedContent() {
+  // Features latest 3 market outlook posts by date
+  const latestPosts = [...outlookPosts]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+
   return (
     <section className="bg-[var(--color-bg-subtle)] border-t border-[var(--color-border)]">
       <div className="max-w-5xl mx-auto px-8 py-20">
@@ -38,7 +19,7 @@ export function FeaturedContent() {
         </div>
         
         <div className="space-y-8">
-          {contentItems.map((item) => (
+          {latestPosts.map((item) => (
             <article 
               key={item.id}
               className="bg-white border border-[var(--color-border)] p-8 hover:shadow-md transition-shadow"
@@ -54,13 +35,13 @@ export function FeaturedContent() {
                   <p className="text-[var(--color-text-secondary)] mb-4">
                     {item.excerpt}
                   </p>
-                  <a 
-                    href="#" 
+                  <Link 
+                    to={generatePostUrl(item.id, item.title)}
                     className="inline-flex items-center gap-2 text-[var(--color-navy)] hover:text-[var(--color-charcoal)] transition-colors"
                   >
                     Read More
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
