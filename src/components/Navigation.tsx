@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { components, layout } from '@/styles';
 
 export function Navigation() {
   const linkClasses = (isActive: boolean) =>
@@ -11,8 +12,8 @@ export function Navigation() {
     }`;
 
   return (
-    <header className="border-b border-[var(--color-border)] bg-white">
-      <div className="max-w-7xl mx-auto px-8 py-5">
+    <header className={components.nav.container}>
+      <div className={layout.container.wide + ' py-5'}>
         <div className="flex items-center justify-between">
           <NavLink to="/" end className="flex items-center text-[var(--color-navy)]">
             <h3>Alpha Market Notes</h3>

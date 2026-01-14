@@ -1,7 +1,8 @@
-import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { outlookPosts } from '../data/marketOutlookPosts';
-import { extractIdFromSlug } from '../utils/slugify';
+import { ArrowLeft } from 'lucide-react';
+import { layout, typography, components } from '@/styles';
+import { outlookPosts } from '@/data';
+import { extractIdFromSlug } from '@/utils';
 
 export function MarketOutlookPostPage() {
   const { slugWithId } = useParams<{ slugWithId: string }>();
@@ -9,7 +10,7 @@ export function MarketOutlookPostPage() {
   // Extract ID from the URL (format: "title-slug-id")
   const id = slugWithId ? extractIdFromSlug(slugWithId) : '';
   
-  // Find the post by ID (supports both string and numeric IDs)
+  // Find the post by ID
   const post = outlookPosts.find(p => p.id.toString() === id);
   
   // If post not found, redirect to market outlook page
@@ -18,13 +19,14 @@ export function MarketOutlookPostPage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-8 min-h-screen">
+    <div className={layout.container.standard +"bg-[var(--color-bg-subtle)] min-h-screen"}>
+
       {/* Article Header */}
-      <article>
-        <div className="max-w-4xl mx-auto px-8 py-16 mb-12">
+      <article className="bg-white">
+        <div className={components.article.header}>
           {/* Category & Meta */}
-          <div className="flex items-center gap-4 text-sm text-[var(--color-text-muted)] mb-8">
-            <span className="text-[var(--color-accent)] font-medium">{post.category}</span>
+          <div className={components.article.meta}>
+            <span className={typography.accent + ' font-medium'}>{post.category}</span>
             <span>•</span>
             <span>{post.date}</span>
             <span>•</span>
@@ -32,16 +34,16 @@ export function MarketOutlookPostPage() {
           </div>
 
           {/* Title */}
-          <h1 className="mb-12">{post.title}</h1>
+          <h1 className={typography.heading.h1 + ' mb-6'}>{post.title}</h1>
 
-          {/* Excerpt
-          <p className="text-xl text-[var(--color-text-secondary)] leading-relaxed border-l-4 border-[var(--color-navy)] pl-6 mb-8">
+          {/* Excerpt */}
+          <p className={typography.body.large + ' border-l-4 border-[var(--color-navy)] pl-6 mb-12'}>
             {post.excerpt}
-          </p> */}
+          </p>
 
           {/* Article Content */}
           <div 
-            className="mb-8 article-content prose prose-lg max-w-none
+            className="article-content prose prose-lg max-w-none
               prose-headings:text-[var(--color-charcoal)] 
               prose-h3:text-2xl prose-h3:font-semibold prose-h3:mt-12 prose-h3:mb-4
               prose-p:text-[var(--color-text-secondary)] prose-p:leading-relaxed prose-p:mb-6
@@ -50,23 +52,13 @@ export function MarketOutlookPostPage() {
               prose-strong:text-[var(--color-charcoal)] prose-strong:font-semibold"
             dangerouslySetInnerHTML={{ __html: post.content || '' }}
           />
-
-          {/* Sources Section */}
-          {post.sources && post.sources.length > 0 && (
-            <div className="mt-16 pt-8 py-16">
-              <h3 className="text-xl font-semibold mb-4">Sources</h3>
-              {post.sources.map((source, index) => (
-                <p className='mb-3' key={index}>{source}</p>
-              ))}
-            </div>
-          )}
         </div>
       </article>
 
-      {/* Related Posts Section (Optional) */}
-      {/* <section className="py-12">
-        <div className="border-t border-[var(--color-border)] max-w-4xl mx-auto px-8 py-12">
-          <h2 className="text-2xl font-semibold mb-6">More from Market Outlook</h2>
+      {/* Related Posts Section */}
+      <section className={layout.section.default}>
+        <div className="max-w-4xl mx-auto px-8">
+          <h3 className={typography.heading.h3 + ' mb-6'}>More from Market Outlook</h3>
           <div className="grid gap-6">
             {outlookPosts
               .filter(p => p.id !== post.id)
@@ -83,27 +75,25 @@ export function MarketOutlookPostPage() {
                   <Link
                     key={relatedPost.id}
                     to={`/market-outlook/${relatedSlug}-${relatedPost.id}`}
-                    className="border-b border-[var(--color-border)] my-6 p-6 hover:shadow-md transition-shadow block"
+                    className={layout.card.hoverable + ' block'}
                   >
-                    <>
-                      <div className="flex items-center gap-3 text-sm text-[var(--color-text-muted)] pt-6 mb-3">
-                        <span className="text-[var(--color-accent)]">{relatedPost.category}</span>
-                        <span>•</span>
-                        <span>{relatedPost.date}</span>
-                      </div>
-                      <h3 className="text-xl font-semibold mb-2 text-[var(--color-charcoal)]">
-                        {relatedPost.title}
-                      </h3>
-                      <p className="text-[var(--color-text-secondary)] line-clamp-2">
-                        {relatedPost.excerpt}
-                      </p>
-                    </>
+                    <div className={typography.meta + ' flex items-center gap-3 mb-3'}>
+                      <span className={typography.accent}>{relatedPost.category}</span>
+                      <span>•</span>
+                      <span>{relatedPost.date}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2 text-[var(--color-charcoal)]">
+                      {relatedPost.title}
+                    </h3>
+                    <p className={typography.body.default + ' line-clamp-2'}>
+                      {relatedPost.excerpt}
+                    </p>
                   </Link>
                 );
               })}
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
