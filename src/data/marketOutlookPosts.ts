@@ -5,6 +5,7 @@ export interface OutlookPost {
   date: string;
   category: string;
   readTime: string;
+  sources: string[];
   content: string;
 }
 
@@ -16,6 +17,14 @@ export const outlookPosts: OutlookPost[] = [
     date: "January 12, 2026",
     category: "Quarterly Review",
     readTime: "5 min read",
+    sources: [
+      "Aliaga, S. (2025, September 12). Is AI already driving U.S. growth?. J.P.Morgan. https://am.jpmorgan.com/ca/en/asset-management/adv/insights/market-insights/market-updates/on-the-minds-of-investors/is-ai-already-driving-us-growth/",
+      "Gapen, M. (2025, November 25). U.S. economic outlook: What’s driving U.S. growth in 2026? Morgan Stanley. https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/us-economic-growth-outlook-2026-michael-gapen",
+      "McGeever, J. (2025, August 18). Can the rich continue to prop up US consumer spending? | Reuters. Reuters. https://www.reuters.com/markets/us/can-rich-continue-prop-up-us-consumer-spending-2025-08-18/",
+      "AI at work but not at scale. McKinsey & Company. (2025, December 10). https://www.mckinsey.com/featured-insights/week-in-charts/ai-at-work-but-not-at-scale",
+      "Reuters. (2025, October 30). Tech leaders boost AI spending, but alphabet’s cash flow wins investor favor. TradingView. https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L1N3WB0DN%3A0-tech-leaders-boost-ai-spending-but-alphabet-s-cash-flow-wins-investor-favor/",
+      "AI Could Affect 90% of Occupations. Morgan Stanley. (2025, September 17). https://www.morganstanley.com/insights/articles/ai-workplace-outlook-2H-2025",
+    ],
     content: `
       <p>
       Artificial intelligence (AI) has become a central factor influencing U.S. equity markets and corporate strategy.
@@ -136,31 +145,37 @@ export const outlookPosts: OutlookPost[] = [
         <li>Rapid AI development in China, intensifying global competition and influencing innovation dynamics</li>
       </ul>
         
-      <h3>Market Scenarios and Return Outlook</h3>
+      <h3>My Opinion: Predictions Based on Market Scenarios</h3>
       <p>
       Three scenarios frame potential outcomes for U.S. equities:
       </p>
     
       <ul>
         <li>
-          <strong>Base Case (Most Likely):</strong> Steady AI adoption with incremental productivity and revenue gains.
-          Valuation multiples remain broadly stable. Expected total returns: 8–12%, driven primarily by earnings growth.
+          <strong>Base Case (Most Likely):</strong> AI adoption progresses steadily without major breakthroughs or 
+          structural setbacks. Productivity gains and incremental revenue growth support corporate earnings, while 
+          valuation multiples remain broadly stable. Under this scenario, U.S. equities generate total returns 
+          in the range of 8–12%, driven primarily by earnings growth rather than multiple expansion.
         </li>
         <li>
-          <strong>Upside Scenario:</strong> Faster-than-expected commercialization and productivity gains support
-          selective valuation expansion. Potential returns: +15–20%.
+          <strong>Upside Scenario:</strong> AI development exceeds expectations, with faster commercialization,
+          stronger productivity gains, or the emergence of compelling new applications. Improved earnings visibility
+          supports selective valuation expansion alongside profit growth. In this environment, U.S. equities could
+          deliver +15–20% returns, reflecting both earnings strength and improved sentiment.
         </li>
         <li>
-          <strong>Downside Scenario:</strong> AI investment fails to generate expected returns, leading to earnings
-          disappointments and higher volatility. Potential market decline: -20% to -30%.
+          <strong>Downside Scenario:</strong> AI investment fails to translate into expected returns, calling into
+          question the sustainability of current spending levels. Slower adoption, margin pressure, or capital misallocation
+          lead to earnings disappointments, particularly among AI-exposed firms. Under this scenario, U.S. equities could
+          decline by -20% to -30%, with heightened volatility and broader risk aversion.
         </li>
       </ul>
         
       <h3>Conclusion</h3>
       <p>
-      AI is likely to remain the defining structural factor for U.S. equity markets in 2026. Its influence spans capital
-      investment, corporate earnings, and consumption dynamics. While long-term potential remains substantial, market
-      performance will increasingly depend on execution, profitability, and capital discipline rather than expectations
+      AI is likely to remain the defining structural factor for U.S. equity markets in 2026. Its influence extends across 
+      capital investment, corporate earnings, and consumption dynamics. While long-term potential remains substantial, 
+      market performance will increasingly depend on execution, profitability, and capital discipline rather than expectations 
       alone. A selective and evidence-based investment approach appears increasingly appropriate.
       </p>
   `
