@@ -1,31 +1,32 @@
 export interface OutlookPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  category: string;
-  readTime: string;
-  sources: string[];
-  content: string;
+	id: string;
+	title: string;
+	excerpt: string;
+	date: string;
+	category: string;
+	readTime: string;
+	sources: string[];
+	content: string;
 }
 
 export const outlookPosts: OutlookPost[] = [
-  {
-    id: "ba0a9fa3",
-    title: "AI and the U.S. Stock Market in 2026: Investment and Economic Implications",
-    excerpt: "AI remains the engine of U.S. equities in 2026, but the narrative has shifted from promise to profitability. Success now requires a selective approach focused on execution and capital discipline rather than broad exposure.",
-    date: "January 12, 2026",
-    category: "Quarterly Review",
-    readTime: "5 min read",
-    sources: [
-      "Aliaga, S. (2025, September 12). Is AI already driving U.S. growth?. J.P.Morgan. https://am.jpmorgan.com/ca/en/asset-management/adv/insights/market-insights/market-updates/on-the-minds-of-investors/is-ai-already-driving-us-growth/",
-      "Gapen, M. (2025, November 25). U.S. economic outlook: What’s driving U.S. growth in 2026? Morgan Stanley. https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/us-economic-growth-outlook-2026-michael-gapen",
-      "McGeever, J. (2025, August 18). Can the rich continue to prop up US consumer spending? | Reuters. Reuters. https://www.reuters.com/markets/us/can-rich-continue-prop-up-us-consumer-spending-2025-08-18/",
-      "AI at work but not at scale. McKinsey & Company. (2025, December 10). https://www.mckinsey.com/featured-insights/week-in-charts/ai-at-work-but-not-at-scale",
-      "Reuters. (2025, October 30). Tech leaders boost AI spending, but alphabet’s cash flow wins investor favor. TradingView. https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L1N3WB0DN%3A0-tech-leaders-boost-ai-spending-but-alphabet-s-cash-flow-wins-investor-favor/",
-      "AI Could Affect 90% of Occupations. Morgan Stanley. (2025, September 17). https://www.morganstanley.com/insights/articles/ai-workplace-outlook-2H-2025",
-    ],
-    content: `
+	{
+		id: "ba0a9fa3",
+		title: "AI and the U.S. Stock Market in 2026: Investment and Economic Implications",
+		excerpt:
+			"AI remains the engine of U.S. equities in 2026, but the narrative has shifted from promise to profitability. Success now requires a selective approach focused on execution and capital discipline rather than broad exposure.",
+		date: "January 12, 2026", //TODO: Automate 
+		category: "Quarterly Review", //TODO: market outlook
+		readTime: "5 min read", //TODO: Automate by giving word count
+		sources: [
+			"Aliaga, S. (2025, September 12). Is AI already driving U.S. growth?. J.P.Morgan. https://am.jpmorgan.com/ca/en/asset-management/adv/insights/market-insights/market-updates/on-the-minds-of-investors/is-ai-already-driving-us-growth/",
+			"Gapen, M. (2025, November 25). U.S. economic outlook: What’s driving U.S. growth in 2026? Morgan Stanley. https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/us-economic-growth-outlook-2026-michael-gapen",
+			"McGeever, J. (2025, August 18). Can the rich continue to prop up US consumer spending? | Reuters. Reuters. https://www.reuters.com/markets/us/can-rich-continue-prop-up-us-consumer-spending-2025-08-18/",
+			"AI at work but not at scale. McKinsey & Company. (2025, December 10). https://www.mckinsey.com/featured-insights/week-in-charts/ai-at-work-but-not-at-scale",
+			"Reuters. (2025, October 30). Tech leaders boost AI spending, but alphabet’s cash flow wins investor favor. TradingView. https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L1N3WB0DN%3A0-tech-leaders-boost-ai-spending-but-alphabet-s-cash-flow-wins-investor-favor/",
+			"AI Could Affect 90% of Occupations. Morgan Stanley. (2025, September 17). https://www.morganstanley.com/insights/articles/ai-workplace-outlook-2H-2025",
+		],
+		content: `
       <p>
       Artificial intelligence (AI) has become a central factor influencing U.S. equity markets and corporate strategy.
       By 2026, AI-related investment and adoption are expected to play a measurable role in economic growth, earnings
@@ -178,296 +179,408 @@ export const outlookPosts: OutlookPost[] = [
       market performance will increasingly depend on execution, profitability, and capital discipline rather than expectations 
       alone. A selective and evidence-based investment approach appears increasingly appropriate.
       </p>
-  `
-  },
-  // {
-  //   id: "cb8a7fe1",
-  //   title: "Q4 2025 Market Review: Navigating Rate Uncertainty",
-  //   excerpt: "A comprehensive analysis of market dynamics in the final quarter, examining the interplay between monetary policy expectations and equity valuations across sectors. We explore defensive positioning strategies and identify opportunities in quality names.",
-  //   date: "January 7, 2026",
-  //   category: "Quarterly Review",
-  //   readTime: "12 min read",
-  //   content: `
-  //     <h3>Executive Summary</h3>
-  //     <p>The fourth quarter of 2025 presented investors with a complex landscape characterized by divergent signals from monetary policy, corporate earnings, and macroeconomic indicators. While equity markets demonstrated remarkable resilience, beneath the surface lay significant sector dispersion and valuation challenges that merit careful consideration.</p>
+  `,
+	},
+	{
+		id: "19bc9ca4",
+		title: "Market Recap | Week of January 12, 2026",
+		excerpt:
+			"Week of Jan. 12, 2026: Markets saw a defensive rotation amid sticky inflation, balanced by cyclical strength from solid industrial production and targeted tech gains led by TSMC earnings.",
+		date: "January 16, 2026",
+		category: "Weekly Market Recap",
+		readTime: "3 min read",
+		sources: [
+      "Google. (n.d.-a). Invesco QQQ Trust, series 1 (QQQ) Price & News. Google Finance. https://www.google.com/finance/quote/QQQ:NASDAQ?window=5D",
+      "Google. (n.d.-b). IShares russell 2000 ETF (IWM) price & news. Google Finance. https://www.google.com/finance/quote/IWM:NYSEARCA?window=5D",
+      "Google. (n.d.-c). SPDR S&P 500 ETF Trust (SPY) price & news. Google Finance. https://www.google.com/finance/quote/SPY:NYSEARCA?window=5D",
+      "The Press Release_4Q25_ADA. BANK OF AMERICA. (n.d.). https://d1io3yog0oux5.cloudfront.net/_104499be61880f9ad5531f4865805c8b/bankofamerica/db/806/10472/earnings_release/The+Press+Release_4Q25_ADA.pdf",
+      "Sector tracker: State Street. State Street Investment Management. (n.d.). https://www.ssga.com/us/en/intermediary/resources/sector-tracker#currentTab=dayFive",
+      "Son, H. (2026, January 13). JPMorgan Chase Tops estimates as trading revenue exceeds expectations. CNBC. https://www.cnbc.com/2026/01/13/jpmorgan-chase-jpm-earnings-q4-2025.html",
+      "TSMC Reports Fourth Quarter EPS of NT$19.50. TSMC. (2026, January 15). https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/3e49621566a3ca53bdf8aee2586929b666c17fd6/4Q25EarningsRelease.pdf",
+      "U.S. Bureau of Labor Statistics. (2026, January 13). Consumer price index summary - 2025 M12 results. U.S. Bureau of Labor Statistics. https://www.bls.gov/news.release/cpi.nr0.htm",
+      "VIX volatility products. Cboe. (n.d.). https://www.cboe.com/tradable-products/vix",
+      "Writer, Rttn. S. (2026, January 16). U.S. industrial production climbs 0.4% in December, much more than expected. RTTNews. https://www.rttnews.com/3611141/u-s-industrial-production-climbs-0-4-in-december-much-more-than-expected.aspx",
+      "Zacks Investment Research. (2026, January 14). Wells Fargo Q4 earnings top estimates on higher NII, stock slips. Zacks Investment Research. https://www.zacks.com/stock/news/2817426/wells-fargo-q4-earnings-top-estimates-on-higher-nii-stock-slips?cid=CS-MSN-FT-analyst_blog%7Cearnings_article-2817426"
+    ],
+		content: `
+      <h3>Broad Market Benchmarks</h3>
+        <p>
+          The broad market was essentially flat this week. The S&amp;P&nbsp;500 (SPY) rose
+          <strong>+0.12%</strong>, while the Nasdaq&nbsp;100 (QQQ) slipped
+          <strong>-0.26%</strong>, reflecting weakness in mega-cap technology stocks.
+          Small-cap equities outperformed, with the Russell&nbsp;2000 (IWM) gaining
+          <strong>+2.55%</strong>, highlighting a rotation toward more economically
+          sensitive names.
+        </p>
 
-  //     <h3>Monetary Policy and Rate Expectations</h3>
-  //     <p>The Federal Reserve's messaging throughout Q4 reflected a nuanced balancing act between supporting economic growth and maintaining vigilance against inflation. Market participants oscillated between expectations of rate cuts and extended higher-for-longer scenarios, creating volatility in rate-sensitive sectors.</p>
-      
-  //     <p>Our analysis suggests that the market may be underpricing the persistence of elevated rates into 2026. Historical precedent indicates that the lag effects of monetary tightening often manifest 12-18 months after implementation, suggesting potential headwinds for certain cyclical sectors.</p>
+        <h3>Macro and Defensive Rotation</h3>
+        <p>
+          The December CPI report came in line with expectations. Headline CPI increased
+          <strong>0.3%</strong> month-over-month and <strong>2.7%</strong> year-over-year,
+          while core CPI (excluding food and energy) rose <strong>2.6%</strong> YoY.
+          Persistently sticky inflation maintained some uncertainty around the Federal
+          Reserve’s next policy moves.
+        </p>
+        <p>
+          Investors rotated toward defensive sectors. Consumer Staples (XLP) led with a
+          <strong>+5.01%</strong> gain, while Utilities (XLU) advanced
+          <strong>+3.86%</strong>, signaling demand for stability even as the VIX remained
+          flat, indicating caution rather than panic.
+        </p>
 
-  //     <h3>Sector Performance and Positioning</h3>
-  //     <p>Defensive sectors including consumer staples, utilities, and healthcare demonstrated relative strength during periods of heightened uncertainty. This rotation reflects growing investor preference for quality earnings and sustainable cash flows over speculative growth narratives.</p>
+        <h3>Financial Sector Weakness</h3>
+        <p>
+          The Financial sector (XLF) lagged this week, declining <strong>-2.74%</strong>,
+          despite several banks reporting solid earnings, reflecting ongoing investor
+          caution toward the sector’s outlook.
+        </p>
+        <p>
+          JPMorgan reported Q4 net income of <strong>$13&nbsp;billion</strong> with EPS of
+          <strong>$4.63</strong>, though shares softened as reserve charges raised concerns
+          about future credit losses. Bank of America delivered net income of
+          <strong>$7.6&nbsp;billion</strong>, beating estimates, while Wells Fargo reported
+          approximately <strong>$5.36&nbsp;billion</strong>, with expenses and severance
+          costs weighing on sentiment.
+        </p>
+        <p>
+          Investor concerns were compounded by a proposal to cap credit card interest rates
+          at <strong>10%</strong> for one year, well below current average APRs of roughly
+          <strong>21–22%</strong>. Even with relatively strong earnings, markets are pricing
+          in potential margin compression and lower future profitability, as credit card
+          interest represents a meaningful revenue source for major banks.
+        </p>
 
-  //     <p>Technology sector performance remained bifurcated, with established platform companies maintaining premium valuations while smaller-cap growth names experienced multiple compression. This divergence underscores the market's increasing discrimination between different quality tiers within the sector.</p>
+        <h3>Cyclical Strength</h3>
+        <p>
+          Several cyclical sectors performed well, with Industrials and Materials each
+          rising by more than <strong>3%</strong>.
+        </p>
+        <p>
+          Economic data supported this optimism. U.S. industrial production rose
+          <strong>0.4%</strong> in December, exceeding expectations of
+          <strong>0.1%</strong>. Manufacturing output increased <strong>0.2%</strong>, and
+          overall production was up <strong>2.0%</strong> year-over-year, indicating
+          resilient economic activity and supporting demand for industrial goods and
+          materials.
+        </p>
 
-  //     <h3>Valuation Considerations</h3>
-  //     <p>Aggregate market valuations remain elevated by historical standards, with the S&P 500 trading at approximately 19x forward earnings. However, this headline figure masks substantial dispersion across sectors and market capitalizations.</p>
+        <h3>Growth / Tech Drivers</h3>
+        <p>
+          TSMC’s Q4 earnings and aggressive 2026 capital expenditure plans supported
+          selective strength in the technology sector. The company reported
+          <strong>$33.7B</strong> in revenue (<strong>+25.5%</strong> YoY) and approximately
+          <strong>$16B</strong> in net profit (<strong>+35%</strong> YoY), both exceeding
+          expectations, while guiding Q1 revenue to around <strong>$35B</strong>.
+        </p>
+        <p>
+          Planned capital expenditures of <strong>$52–56B</strong>, largely focused on
+          advanced AI chip technologies, reinforced confidence in sustained AI-driven
+          semiconductor demand and targeted growth opportunities.
+        </p>
 
-  //     <p>We identify pockets of relative value in select industrial names, mid-cap financials with strong credit quality, and certain healthcare subsectors where patent dynamics and pipeline productivity appear underappreciated by the market.</p>
+        <h3>Overall Narrative</h3>
+        <p>
+          The week reflected a dual theme. Investors rotated into defensive sectors amid
+          sticky inflation, while cyclical strength was supported by
+          stronger-than-expected industrial production. Targeted growth and technology
+          gains, led by TSMC’s earnings, also contributed.
+        </p>
+        <p>
+          With the VIX remaining flat, risk was managed without signs of panic. Large-cap
+          technology stocks underperformed, contrasting with leadership from small-cap and
+          cyclical segments. Regulatory overhang, particularly the proposed credit card
+          interest rate cap, weighed on financials, illustrating a market balancing growth
+          opportunities with ongoing caution.
+        </p>
+    `,
+	},
+	// {
+	//   id: "cb8a7fe1",
+	//   title: "Q4 2025 Market Review: Navigating Rate Uncertainty",
+	//   excerpt: "A comprehensive analysis of market dynamics in the final quarter, examining the interplay between monetary policy expectations and equity valuations across sectors. We explore defensive positioning strategies and identify opportunities in quality names.",
+	//   date: "January 7, 2026",
+	//   category: "Quarterly Review",
+	//   readTime: "12 min read",
+	//   content: `
+	//     <h3>Executive Summary</h3>
+	//     <p>The fourth quarter of 2025 presented investors with a complex landscape characterized by divergent signals from monetary policy, corporate earnings, and macroeconomic indicators. While equity markets demonstrated remarkable resilience, beneath the surface lay significant sector dispersion and valuation challenges that merit careful consideration.</p>
 
-  //     <h3>Looking Ahead: Portfolio Positioning</h3>
-  //     <p>Given the current environment, we advocate for a quality-focused approach emphasizing:</p>
-  //     <ul>
-  //       <li>Companies with strong balance sheets and sustainable free cash flow generation</li>
-  //       <li>Businesses demonstrating pricing power and margin resilience</li>
-  //       <li>Selective exposure to secular growth themes with reasonable valuation support</li>
-  //       <li>Geographical diversification to capture opportunities beyond U.S. markets</li>
-  //     </ul>
+	//     <h3>Monetary Policy and Rate Expectations</h3>
+	//     <p>The Federal Reserve's messaging throughout Q4 reflected a nuanced balancing act between supporting economic growth and maintaining vigilance against inflation. Market participants oscillated between expectations of rate cuts and extended higher-for-longer scenarios, creating volatility in rate-sensitive sectors.</p>
 
-  //     <p>The coming quarters will likely reward patient capital deployed in enterprises with durable competitive advantages and management teams focused on long-term value creation rather than short-term earnings management.</p>
+	//     <p>Our analysis suggests that the market may be underpricing the persistence of elevated rates into 2026. Historical precedent indicates that the lag effects of monetary tightening often manifest 12-18 months after implementation, suggesting potential headwinds for certain cyclical sectors.</p>
 
-  //     <h3>Conclusion</h3>
-  //     <p>While headline market performance may suggest complacency, careful fundamental analysis reveals both risks and opportunities for discerning investors. The key to navigating this environment lies in maintaining discipline around valuation, focusing on business quality, and remaining alert to shifting macroeconomic conditions.</p>
-  //   `
-  // },
-  // {
-  //   id: "d4b2c9a3",
-  //   title: "The Case for Quality: Defensive Positioning in Volatile Markets",
-  //   excerpt: "Exploring the attributes that distinguish resilient businesses during market turbulence, with a focus on cash flow generation and competitive moats. This piece examines historical precedents and current opportunities in stable, well-capitalized enterprises.",
-  //   date: "December 28, 2025",
-  //   category: "Strategy",
-  //   readTime: "10 min read",
-  //   content: `
-  //     <h3>Defining Quality in Investment Terms</h3>
-  //     <p>In capital markets, "quality" transcends subjective assessment to encompass measurable characteristics that have historically correlated with superior risk-adjusted returns, particularly during periods of market stress. These attributes include consistent cash flow generation, high returns on invested capital, strong balance sheets, and defensible competitive positions.</p>
+	//     <h3>Sector Performance and Positioning</h3>
+	//     <p>Defensive sectors including consumer staples, utilities, and healthcare demonstrated relative strength during periods of heightened uncertainty. This rotation reflects growing investor preference for quality earnings and sustainable cash flows over speculative growth narratives.</p>
 
-  //     <h3>Historical Performance During Downturns</h3>
-  //     <p>Empirical analysis of previous market cycles reveals that quality-focused portfolios typically experience lower drawdowns during corrections while participating meaningfully in subsequent recoveries. During the 2008 financial crisis, companies with strong balance sheets and predictable cash flows declined approximately 30% less than the broader market on average.</p>
+	//     <p>Technology sector performance remained bifurcated, with established platform companies maintaining premium valuations while smaller-cap growth names experienced multiple compression. This divergence underscores the market's increasing discrimination between different quality tiers within the sector.</p>
 
-  //     <h3>Key Quality Indicators</h3>
-  //     <p>Our framework for evaluating business quality emphasizes several core metrics:</p>
-  //     <ul>
-  //       <li><strong>Return on Invested Capital (ROIC):</strong> Sustained ROIC above 15% suggests genuine competitive advantages</li>
-  //       <li><strong>Free Cash Flow Conversion:</strong> Ability to convert earnings into actual cash available for shareholders</li>
-  //       <li><strong>Balance Sheet Strength:</strong> Net debt to EBITDA below 2x provides financial flexibility</li>
-  //       <li><strong>Earnings Stability:</strong> Consistent earnings growth with limited volatility across economic cycles</li>
-  //     </ul>
+	//     <h3>Valuation Considerations</h3>
+	//     <p>Aggregate market valuations remain elevated by historical standards, with the S&P 500 trading at approximately 19x forward earnings. However, this headline figure masks substantial dispersion across sectors and market capitalizations.</p>
 
-  //     <h3>Current Market Opportunities</h3>
-  //     <p>Today's market environment offers selective opportunities in quality names that have experienced temporary valuation compression due to broad sector rotation or company-specific challenges that do not impair underlying business fundamentals.</p>
+	//     <p>We identify pockets of relative value in select industrial names, mid-cap financials with strong credit quality, and certain healthcare subsectors where patent dynamics and pipeline productivity appear underappreciated by the market.</p>
 
-  //     <p>We identify particular value in established consumer brands with pricing power, essential service providers in healthcare and utilities, and select technology infrastructure companies with mission-critical product offerings.</p>
+	//     <h3>Looking Ahead: Portfolio Positioning</h3>
+	//     <p>Given the current environment, we advocate for a quality-focused approach emphasizing:</p>
+	//     <ul>
+	//       <li>Companies with strong balance sheets and sustainable free cash flow generation</li>
+	//       <li>Businesses demonstrating pricing power and margin resilience</li>
+	//       <li>Selective exposure to secular growth themes with reasonable valuation support</li>
+	//       <li>Geographical diversification to capture opportunities beyond U.S. markets</li>
+	//     </ul>
 
-  //     <h3>Portfolio Implementation</h3>
-  //     <p>Implementing a quality-focused strategy requires discipline and patience. Near-term underperformance relative to momentum-driven strategies is common, but long-term wealth compounding tends to favor businesses that consistently generate economic profits.</p>
+	//     <p>The coming quarters will likely reward patient capital deployed in enterprises with durable competitive advantages and management teams focused on long-term value creation rather than short-term earnings management.</p>
 
-  //     <p>Position sizing should reflect both business quality and valuation, with larger allocations to names offering the optimal combination of defensiveness and reasonable entry points.</p>
-  //   `
-  // },
-  // {
-  //   id: "e7f3a8b5",
-  //   title: "Energy Transition: Separating Hype from Fundamental Value",
-  //   excerpt: "An evidence-based assessment of valuation multiples in renewable energy, examining which segments offer compelling risk-adjusted returns for patient capital. We analyze the economics of solar, wind, and energy storage businesses.",
-  //   date: "December 15, 2025",
-  //   category: "Sector Analysis",
-  //   readTime: "15 min read",
-  //   content: `
-  //     <h3>The Investment Landscape</h3>
-  //     <p>The energy transition represents one of the defining investment themes of the coming decades, with global capital flows toward renewable energy infrastructure accelerating substantially. However, enthusiasm around the theme has sometimes disconnected valuations from underlying project economics and competitive dynamics.</p>
+	//     <h3>Conclusion</h3>
+	//     <p>While headline market performance may suggest complacency, careful fundamental analysis reveals both risks and opportunities for discerning investors. The key to navigating this environment lies in maintaining discipline around valuation, focusing on business quality, and remaining alert to shifting macroeconomic conditions.</p>
+	//   `
+	// },
+	// {
+	//   id: "d4b2c9a3",
+	//   title: "The Case for Quality: Defensive Positioning in Volatile Markets",
+	//   excerpt: "Exploring the attributes that distinguish resilient businesses during market turbulence, with a focus on cash flow generation and competitive moats. This piece examines historical precedents and current opportunities in stable, well-capitalized enterprises.",
+	//   date: "December 28, 2025",
+	//   category: "Strategy",
+	//   readTime: "10 min read",
+	//   content: `
+	//     <h3>Defining Quality in Investment Terms</h3>
+	//     <p>In capital markets, "quality" transcends subjective assessment to encompass measurable characteristics that have historically correlated with superior risk-adjusted returns, particularly during periods of market stress. These attributes include consistent cash flow generation, high returns on invested capital, strong balance sheets, and defensible competitive positions.</p>
 
-  //     <h3>Solar Economics: Scale and Learning Curves</h3>
-  //     <p>Solar photovoltaic technology has experienced dramatic cost reductions over the past decade, with module prices declining approximately 90% since 2010. However, this cost curve flattening suggests diminishing returns to scale, challenging growth assumptions embedded in current valuations for many solar developers.</p>
+	//     <h3>Historical Performance During Downturns</h3>
+	//     <p>Empirical analysis of previous market cycles reveals that quality-focused portfolios typically experience lower drawdowns during corrections while participating meaningfully in subsequent recoveries. During the 2008 financial crisis, companies with strong balance sheets and predictable cash flows declined approximately 30% less than the broader market on average.</p>
 
-  //     <p>Utility-scale solar projects now achieve levelized costs of energy (LCOE) competitive with conventional generation in most markets. The investment question centers not on technological viability but on return adequacy given commoditization pressures and intense competition for project development.</p>
+	//     <h3>Key Quality Indicators</h3>
+	//     <p>Our framework for evaluating business quality emphasizes several core metrics:</p>
+	//     <ul>
+	//       <li><strong>Return on Invested Capital (ROIC):</strong> Sustained ROIC above 15% suggests genuine competitive advantages</li>
+	//       <li><strong>Free Cash Flow Conversion:</strong> Ability to convert earnings into actual cash available for shareholders</li>
+	//       <li><strong>Balance Sheet Strength:</strong> Net debt to EBITDA below 2x provides financial flexibility</li>
+	//       <li><strong>Earnings Stability:</strong> Consistent earnings growth with limited volatility across economic cycles</li>
+	//     </ul>
 
-  //     <h3>Wind Power: Offshore Opportunities and Challenges</h3>
-  //     <p>Offshore wind development presents significant scale opportunities, particularly in European and Asian markets with favorable regulatory frameworks. However, recent project cancellations and cost overruns highlight execution risks and sensitivity to interest rate environments given capital intensity.</p>
+	//     <h3>Current Market Opportunities</h3>
+	//     <p>Today's market environment offers selective opportunities in quality names that have experienced temporary valuation compression due to broad sector rotation or company-specific challenges that do not impair underlying business fundamentals.</p>
 
-  //     <p>We favor established operators with proven track records in offshore development over pure-play developers whose valuations assume flawless execution across multiple geographies.</p>
+	//     <p>We identify particular value in established consumer brands with pricing power, essential service providers in healthcare and utilities, and select technology infrastructure companies with mission-critical product offerings.</p>
 
-  //     <h3>Energy Storage: The Critical Enabler</h3>
-  //     <p>Battery energy storage systems (BESS) play an increasingly crucial role in grid stability and renewable integration. Unlike generation assets, storage provides optionality value through arbitrage opportunities and capacity services.</p>
+	//     <h3>Portfolio Implementation</h3>
+	//     <p>Implementing a quality-focused strategy requires discipline and patience. Near-term underperformance relative to momentum-driven strategies is common, but long-term wealth compounding tends to favor businesses that consistently generate economic profits.</p>
 
-  //     <p>Lithium-ion battery costs continue declining, though at a slower pace than in previous years. Investment merit depends heavily on regulatory frameworks enabling appropriate value capture for grid services provided.</p>
+	//     <p>Position sizing should reflect both business quality and valuation, with larger allocations to names offering the optimal combination of defensiveness and reasonable entry points.</p>
+	//   `
+	// },
+	// {
+	//   id: "e7f3a8b5",
+	//   title: "Energy Transition: Separating Hype from Fundamental Value",
+	//   excerpt: "An evidence-based assessment of valuation multiples in renewable energy, examining which segments offer compelling risk-adjusted returns for patient capital. We analyze the economics of solar, wind, and energy storage businesses.",
+	//   date: "December 15, 2025",
+	//   category: "Sector Analysis",
+	//   readTime: "15 min read",
+	//   content: `
+	//     <h3>The Investment Landscape</h3>
+	//     <p>The energy transition represents one of the defining investment themes of the coming decades, with global capital flows toward renewable energy infrastructure accelerating substantially. However, enthusiasm around the theme has sometimes disconnected valuations from underlying project economics and competitive dynamics.</p>
 
-  //     <h3>Valuation Framework and Opportunities</h3>
-  //     <p>We approach energy transition investments through rigorous cash flow analysis, focusing on:</p>
-  //     <ul>
-  //       <li>Contracted revenue visibility and counterparty credit quality</li>
-  //       <li>Capital efficiency metrics and returns on deployed capital</li>
-  //       <li>Management teams with demonstrated execution capability</li>
-  //       <li>Realistic assumptions around maintenance costs and asset life</li>
-  //     </ul>
+	//     <h3>Solar Economics: Scale and Learning Curves</h3>
+	//     <p>Solar photovoltaic technology has experienced dramatic cost reductions over the past decade, with module prices declining approximately 90% since 2010. However, this cost curve flattening suggests diminishing returns to scale, challenging growth assumptions embedded in current valuations for many solar developers.</p>
 
-  //     <p>Current opportunities exist primarily in utility-scale operators with diversified portfolios of operating assets rather than developers carrying significant construction risk.</p>
-  //   `
-  // },
-  // {
-  //   id: "a1c5d2f8",
-  //   title: "Healthcare Innovation: Valuing the R&D Pipeline",
-  //   excerpt: "A framework for evaluating biotechnology and pharmaceutical companies, with particular attention to probability-weighted cash flow analysis and the impact of patent cliffs on long-term value creation.",
-  //   date: "November 22, 2025",
-  //   category: "Sector Analysis",
-  //   readTime: "14 min read",
-  //   content: `
-  //     <h3>The Unique Challenges of Healthcare Valuation</h3>
-  //     <p>Healthcare companies, particularly those in biotechnology and pharmaceuticals, present distinctive valuation challenges due to binary clinical trial outcomes, extended development timelines, and patent-protected revenue streams with predictable expiration dates.</p>
+	//     <p>Utility-scale solar projects now achieve levelized costs of energy (LCOE) competitive with conventional generation in most markets. The investment question centers not on technological viability but on return adequacy given commoditization pressures and intense competition for project development.</p>
 
-  //     <h3>Probability-Weighted Pipeline Analysis</h3>
-  //     <p>Rigorous valuation of development-stage therapeutics requires probability-adjusting projected cash flows based on clinical success rates, regulatory approval likelihood, and commercial launch assumptions.</p>
+	//     <h3>Wind Power: Offshore Opportunities and Challenges</h3>
+	//     <p>Offshore wind development presents significant scale opportunities, particularly in European and Asian markets with favorable regulatory frameworks. However, recent project cancellations and cost overruns highlight execution risks and sensitivity to interest rate environments given capital intensity.</p>
 
-  //     <p>Historical data suggests Phase I compounds have approximately 10% probability of eventual FDA approval, Phase II compounds 20%, and Phase III compounds 60%. However, these aggregate statistics vary significantly by therapeutic area and indication.</p>
+	//     <p>We favor established operators with proven track records in offshore development over pure-play developers whose valuations assume flawless execution across multiple geographies.</p>
 
-  //     <h3>Patent Cliff Dynamics</h3>
-  //     <p>Large-cap pharmaceutical companies face ongoing challenges from patent expirations on blockbuster drugs. The typical branded pharmaceutical loses 80-90% of revenue within 12 months of generic entry, necessitating robust pipeline replacement.</p>
+	//     <h3>Energy Storage: The Critical Enabler</h3>
+	//     <p>Battery energy storage systems (BESS) play an increasingly crucial role in grid stability and renewable integration. Unlike generation assets, storage provides optionality value through arbitrage opportunities and capacity services.</p>
 
-  //     <p>Our analysis focuses on companies with pipeline depth capable of offsetting anticipated exclusivity losses, rather than those dependent on single products regardless of current profitability.</p>
+	//     <p>Lithium-ion battery costs continue declining, though at a slower pace than in previous years. Investment merit depends heavily on regulatory frameworks enabling appropriate value capture for grid services provided.</p>
 
-  //     <h3>Biotech Valuation Frameworks</h3>
-  //     <p>Pre-revenue biotechnology companies require specialized valuation approaches including:</p>
-  //     <ul>
-  //       <li>Risk-adjusted Net Present Value (rNPV) of pipeline assets</li>
-  //       <li>Comparable transaction analysis for similar-stage programs</li>
-  //       <li>Sum-of-the-parts valuation for multi-asset platforms</li>
-  //       <li>Cash runway analysis relative to key clinical milestones</li>
-  //     </ul>
+	//     <h3>Valuation Framework and Opportunities</h3>
+	//     <p>We approach energy transition investments through rigorous cash flow analysis, focusing on:</p>
+	//     <ul>
+	//       <li>Contracted revenue visibility and counterparty credit quality</li>
+	//       <li>Capital efficiency metrics and returns on deployed capital</li>
+	//       <li>Management teams with demonstrated execution capability</li>
+	//       <li>Realistic assumptions around maintenance costs and asset life</li>
+	//     </ul>
 
-  //     <h3>Current Investment Opportunities</h3>
-  //     <p>The current environment presents selective opportunities in:</p>
-  //     <ul>
-  //       <li>Mid-cap biotechnology companies with late-stage assets undervalued relative to commercial potential</li>
-  //       <li>Established pharmaceutical companies trading at discounts despite pipeline quality</li>
-  //       <li>Specialty pharmaceutical platforms with defensible market positions</li>
-  //     </ul>
+	//     <p>Current opportunities exist primarily in utility-scale operators with diversified portfolios of operating assets rather than developers carrying significant construction risk.</p>
+	//   `
+	// },
+	// {
+	//   id: "a1c5d2f8",
+	//   title: "Healthcare Innovation: Valuing the R&D Pipeline",
+	//   excerpt: "A framework for evaluating biotechnology and pharmaceutical companies, with particular attention to probability-weighted cash flow analysis and the impact of patent cliffs on long-term value creation.",
+	//   date: "November 22, 2025",
+	//   category: "Sector Analysis",
+	//   readTime: "14 min read",
+	//   content: `
+	//     <h3>The Unique Challenges of Healthcare Valuation</h3>
+	//     <p>Healthcare companies, particularly those in biotechnology and pharmaceuticals, present distinctive valuation challenges due to binary clinical trial outcomes, extended development timelines, and patent-protected revenue streams with predictable expiration dates.</p>
 
-  //     <p>We maintain discipline around valuation, recognizing that even promising science does not justify unlimited multiples.</p>
-  //   `
-  // },
-  // {
-  //   id: "f9e4b7c2",
-  //   title: "Q3 2025 Market Review: Inflation Data and Market Reactions",
-  //   excerpt: "Analyzing third quarter performance across asset classes, with emphasis on how changing inflation expectations have influenced sector rotation patterns and valuation dispersions in equity markets.",
-  //   date: "October 8, 2025",
-  //   category: "Quarterly Review",
-  //   readTime: "11 min read",
-  //   content: `
-  //     <h3>Inflation Trajectory and Market Implications</h3>
-  //     <p>The third quarter witnessed meaningful progress on inflation moderation, with core PCE declining to 3.2% year-over-year from 4.1% at the previous quarter's close. However, this deceleration occurred unevenly across categories, with goods deflation offset by persistent services inflation.</p>
+	//     <h3>Probability-Weighted Pipeline Analysis</h3>
+	//     <p>Rigorous valuation of development-stage therapeutics requires probability-adjusting projected cash flows based on clinical success rates, regulatory approval likelihood, and commercial launch assumptions.</p>
 
-  //     <h3>Sector Performance Attribution</h3>
-  //     <p>Technology and communication services sectors led market performance, benefiting from falling real yields and renewed enthusiasm around artificial intelligence applications. Conversely, energy and materials sectors lagged as commodity prices softened on moderating global growth expectations.</p>
+	//     <p>Historical data suggests Phase I compounds have approximately 10% probability of eventual FDA approval, Phase II compounds 20%, and Phase III compounds 60%. However, these aggregate statistics vary significantly by therapeutic area and indication.</p>
 
-  //     <p>Financial sector performance proved mixed, with investment banks benefiting from capital markets activity while regional banks continued navigating pressure on net interest margins and commercial real estate exposure.</p>
+	//     <h3>Patent Cliff Dynamics</h3>
+	//     <p>Large-cap pharmaceutical companies face ongoing challenges from patent expirations on blockbuster drugs. The typical branded pharmaceutical loses 80-90% of revenue within 12 months of generic entry, necessitating robust pipeline replacement.</p>
 
-  //     <h3>Credit Markets and Spread Dynamics</h3>
-  //     <p>Investment-grade credit spreads tightened to historically narrow levels, reflecting robust corporate fundamentals and strong demand for yield. High-yield spreads also compressed, though selective stress emerged in specific industries facing structural challenges.</p>
+	//     <p>Our analysis focuses on companies with pipeline depth capable of offsetting anticipated exclusivity losses, rather than those dependent on single products regardless of current profitability.</p>
 
-  //     <h3>International Markets</h3>
-  //     <p>International developed markets generally underperformed U.S. equities, constrained by weaker economic data and political uncertainty in key European markets. Emerging markets showed differentiated performance based on commodity exposure and domestic demand drivers.</p>
+	//     <h3>Biotech Valuation Frameworks</h3>
+	//     <p>Pre-revenue biotechnology companies require specialized valuation approaches including:</p>
+	//     <ul>
+	//       <li>Risk-adjusted Net Present Value (rNPV) of pipeline assets</li>
+	//       <li>Comparable transaction analysis for similar-stage programs</li>
+	//       <li>Sum-of-the-parts valuation for multi-asset platforms</li>
+	//       <li>Cash runway analysis relative to key clinical milestones</li>
+	//     </ul>
 
-  //     <h3>Looking Forward</h3>
-  //     <p>The fourth quarter setup presents both opportunities and risks. Continued inflation progress could support multiple expansion, while any reacceleration would likely trigger volatility. Corporate earnings quality and guidance will prove critical in determining market direction.</p>
-  //   `
-  // },
-  // {
-  //   id: "b8d3e6a4",
-  //   title: "Financial Services: Assessing Credit Cycle Positioning",
-  //   excerpt: "A deep dive into banking sector fundamentals, examining loan portfolio quality, net interest margin trends, and capital adequacy across different market environments. We identify institutions best positioned for the current cycle.",
-  //   date: "September 30, 2025",
-  //   category: "Sector Analysis",
-  //   readTime: "13 min read",
-  //   content: `
-  //     <h3>Current Banking Sector Dynamics</h3>
-  //     <p>The banking sector operates at a critical juncture, with net interest margins benefiting from higher policy rates while simultaneously confronting deposit migration, loan growth normalization, and selective asset quality concerns.</p>
+	//     <h3>Current Investment Opportunities</h3>
+	//     <p>The current environment presents selective opportunities in:</p>
+	//     <ul>
+	//       <li>Mid-cap biotechnology companies with late-stage assets undervalued relative to commercial potential</li>
+	//       <li>Established pharmaceutical companies trading at discounts despite pipeline quality</li>
+	//       <li>Specialty pharmaceutical platforms with defensible market positions</li>
+	//     </ul>
 
-  //     <h3>Net Interest Margin Analysis</h3>
-  //     <p>After expanding significantly during 2022-2024, net interest margins face compression pressure as deposit costs catch up with asset yields. Banks with stable, lower-cost deposit franchises maintain substantial competitive advantages over institutions dependent on wholesale funding or rate-sensitive deposits.</p>
+	//     <p>We maintain discipline around valuation, recognizing that even promising science does not justify unlimited multiples.</p>
+	//   `
+	// },
+	// {
+	//   id: "f9e4b7c2",
+	//   title: "Q3 2025 Market Review: Inflation Data and Market Reactions",
+	//   excerpt: "Analyzing third quarter performance across asset classes, with emphasis on how changing inflation expectations have influenced sector rotation patterns and valuation dispersions in equity markets.",
+	//   date: "October 8, 2025",
+	//   category: "Quarterly Review",
+	//   readTime: "11 min read",
+	//   content: `
+	//     <h3>Inflation Trajectory and Market Implications</h3>
+	//     <p>The third quarter witnessed meaningful progress on inflation moderation, with core PCE declining to 3.2% year-over-year from 4.1% at the previous quarter's close. However, this deceleration occurred unevenly across categories, with goods deflation offset by persistent services inflation.</p>
 
-  //     <h3>Asset Quality Considerations</h3>
-  //     <p>Overall credit metrics remain healthy by historical standards, but forward-looking indicators suggest modest deterioration ahead. Commercial real estate exposure varies significantly across institutions, with office sector concentration presenting elevated risk.</p>
+	//     <h3>Sector Performance Attribution</h3>
+	//     <p>Technology and communication services sectors led market performance, benefiting from falling real yields and renewed enthusiasm around artificial intelligence applications. Conversely, energy and materials sectors lagged as commodity prices softened on moderating global growth expectations.</p>
 
-  //     <p>Consumer credit shows differentiated trends, with prime borrowers maintaining strong payment performance while subprime delinquencies normalize toward pre-pandemic levels.</p>
+	//     <p>Financial sector performance proved mixed, with investment banks benefiting from capital markets activity while regional banks continued navigating pressure on net interest margins and commercial real estate exposure.</p>
 
-  //     <h3>Capital Position and Return Profiles</h3>
-  //     <p>Major U.S. banks maintain robust capital ratios well above regulatory minimums, supporting ongoing shareholder distributions through dividends and buybacks. Return on equity profiles have improved substantially from the zero-rate environment, with large banks achieving ROEs in the 12-16% range.</p>
+	//     <h3>Credit Markets and Spread Dynamics</h3>
+	//     <p>Investment-grade credit spreads tightened to historically narrow levels, reflecting robust corporate fundamentals and strong demand for yield. High-yield spreads also compressed, though selective stress emerged in specific industries facing structural challenges.</p>
 
-  //     <h3>Regional Bank Differentiation</h3>
-  //     <p>Regional banks present varied investment cases depending on geographic footprint, loan mix, and deposit franchise quality. Well-managed regionals with strong local market positions trade at valuations that may not fully reflect earnings power normalized for credit costs.</p>
+	//     <h3>International Markets</h3>
+	//     <p>International developed markets generally underperformed U.S. equities, constrained by weaker economic data and political uncertainty in key European markets. Emerging markets showed differentiated performance based on commodity exposure and domestic demand drivers.</p>
 
-  //     <h3>Investment Perspective</h3>
-  //     <p>We favor large-cap banks with diversified revenue streams, modest credit risk, and strong capital return capacity. Select regional banks offer value but require careful underwriting of asset quality and deposit stability.</p>
-  //   `
-  // },
-  // {
-  //   id: "c2a9f1d7",
-  //   title: "Technology Valuations: When Growth Meets Profitability",
-  //   excerpt: "Examining the current state of software and technology services valuations, with focus on the transition from growth-at-any-cost to sustainable profitability. Includes comparative analysis of SaaS metrics and margin profiles.",
-  //   date: "September 12, 2025",
-  //   category: "Sector Analysis",
-  //   readTime: "16 min read",
-  //   content: `
-  //     <h3>The Valuation Recalibration</h3>
-  //     <p>The technology sector has undergone significant multiple compression from 2021 peaks, with software companies experiencing particularly dramatic valuation resets. This recalibration reflects both rising discount rates and shifting investor preferences toward profitability over pure growth.</p>
+	//     <h3>Looking Forward</h3>
+	//     <p>The fourth quarter setup presents both opportunities and risks. Continued inflation progress could support multiple expansion, while any reacceleration would likely trigger volatility. Corporate earnings quality and guidance will prove critical in determining market direction.</p>
+	//   `
+	// },
+	// {
+	//   id: "b8d3e6a4",
+	//   title: "Financial Services: Assessing Credit Cycle Positioning",
+	//   excerpt: "A deep dive into banking sector fundamentals, examining loan portfolio quality, net interest margin trends, and capital adequacy across different market environments. We identify institutions best positioned for the current cycle.",
+	//   date: "September 30, 2025",
+	//   category: "Sector Analysis",
+	//   readTime: "13 min read",
+	//   content: `
+	//     <h3>Current Banking Sector Dynamics</h3>
+	//     <p>The banking sector operates at a critical juncture, with net interest margins benefiting from higher policy rates while simultaneously confronting deposit migration, loan growth normalization, and selective asset quality concerns.</p>
 
-  //     <h3>SaaS Metrics Framework</h3>
-  //     <p>Software-as-a-Service businesses warrant evaluation through specialized metrics including:</p>
-  //     <ul>
-  //       <li><strong>Revenue Growth Rate:</strong> Year-over-year organic revenue expansion</li>
-  //       <li><strong>Net Dollar Retention:</strong> Revenue retention and expansion from existing customers</li>
-  //       <li><strong>Rule of 40:</strong> Sum of growth rate and free cash flow margin</li>
-  //       <li><strong>Customer Acquisition Cost (CAC) Payback:</strong> Months to recover customer acquisition spending</li>
-  //       <li><strong>Gross Margin:</strong> Indicator of unit economics and scalability</li>
-  //     </ul>
+	//     <h3>Net Interest Margin Analysis</h3>
+	//     <p>After expanding significantly during 2022-2024, net interest margins face compression pressure as deposit costs catch up with asset yields. Banks with stable, lower-cost deposit franchises maintain substantial competitive advantages over institutions dependent on wholesale funding or rate-sensitive deposits.</p>
 
-  //     <h3>The Profitability Transition</h3>
-  //     <p>Market conditions have forced many software companies to prioritize profitability over growth, resulting in improved operating margins but slower revenue expansion. Companies successfully managing this transition demonstrate disciplined expense management while protecting core product investment.</p>
+	//     <h3>Asset Quality Considerations</h3>
+	//     <p>Overall credit metrics remain healthy by historical standards, but forward-looking indicators suggest modest deterioration ahead. Commercial real estate exposure varies significantly across institutions, with office sector concentration presenting elevated risk.</p>
 
-  //     <h3>Artificial Intelligence Impact</h3>
-  //     <p>AI capabilities increasingly differentiate software vendors, with companies effectively integrating AI into products commanding premium valuations. However, AI hype has also created valuation distortions requiring careful fundamental analysis to separate substance from narrative.</p>
+	//     <p>Consumer credit shows differentiated trends, with prime borrowers maintaining strong payment performance while subprime delinquencies normalize toward pre-pandemic levels.</p>
 
-  //     <h3>Valuation Opportunities</h3>
-  //     <p>Current valuations present selective opportunities in:</p>
-  //     <ul>
-  //       <li>Established SaaS platforms with strong net dollar retention trading below historical multiples</li>
-  //       <li>Vertical software companies with defensible niches and recurring revenue</li>
-  //       <li>Infrastructure software providers benefiting from cloud migration tailwinds</li>
-  //     </ul>
+	//     <h3>Capital Position and Return Profiles</h3>
+	//     <p>Major U.S. banks maintain robust capital ratios well above regulatory minimums, supporting ongoing shareholder distributions through dividends and buybacks. Return on equity profiles have improved substantially from the zero-rate environment, with large banks achieving ROEs in the 12-16% range.</p>
 
-  //     <h3>Investment Framework</h3>
-  //     <p>We prioritize companies demonstrating strong unit economics, high switching costs, and clear paths to sustainable free cash flow generation. Valuation discipline remains paramount given historical sector volatility.</p>
-  //   `
-  // },
-  // {
-  //   id: "d5f8b3e9",
-  //   title: "Mid-Year Outlook 2025: Reassessing Risk and Return Expectations",
-  //   excerpt: "A comprehensive review of first-half market performance and forward-looking analysis of macroeconomic conditions, earnings trends, and valuation levels across global markets.",
-  //   date: "July 2, 2025",
-  //   category: "Quarterly Review",
-  //   readTime: "18 min read",
-  //   content: `
-  //     <h3>First Half Review</h3>
-  //     <p>The first half of 2025 delivered positive returns across most equity markets despite persistent macroeconomic uncertainty and geopolitical tensions. U.S. large-cap equities led performance, driven by technology sector strength and resilient corporate earnings.</p>
+	//     <h3>Regional Bank Differentiation</h3>
+	//     <p>Regional banks present varied investment cases depending on geographic footprint, loan mix, and deposit franchise quality. Well-managed regionals with strong local market positions trade at valuations that may not fully reflect earnings power normalized for credit costs.</p>
 
-  //     <h3>Macroeconomic Assessment</h3>
-  //     <p>Global economic growth moderated from 2024 levels but remained positive, with developed markets showing greater resilience than emerging economies. Central bank policy diverged across regions, with the Federal Reserve maintaining elevated rates while some international central banks initiated easing cycles.</p>
+	//     <h3>Investment Perspective</h3>
+	//     <p>We favor large-cap banks with diversified revenue streams, modest credit risk, and strong capital return capacity. Select regional banks offer value but require careful underwriting of asset quality and deposit stability.</p>
+	//   `
+	// },
+	// {
+	//   id: "c2a9f1d7",
+	//   title: "Technology Valuations: When Growth Meets Profitability",
+	//   excerpt: "Examining the current state of software and technology services valuations, with focus on the transition from growth-at-any-cost to sustainable profitability. Includes comparative analysis of SaaS metrics and margin profiles.",
+	//   date: "September 12, 2025",
+	//   category: "Sector Analysis",
+	//   readTime: "16 min read",
+	//   content: `
+	//     <h3>The Valuation Recalibration</h3>
+	//     <p>The technology sector has undergone significant multiple compression from 2021 peaks, with software companies experiencing particularly dramatic valuation resets. This recalibration reflects both rising discount rates and shifting investor preferences toward profitability over pure growth.</p>
 
-  //     <p>Inflation continued its gradual descent toward central bank targets, though progress slowed compared to 2024. Services inflation persistence and potential commodity price volatility present ongoing challenges to sustainable price stability.</p>
+	//     <h3>SaaS Metrics Framework</h3>
+	//     <p>Software-as-a-Service businesses warrant evaluation through specialized metrics including:</p>
+	//     <ul>
+	//       <li><strong>Revenue Growth Rate:</strong> Year-over-year organic revenue expansion</li>
+	//       <li><strong>Net Dollar Retention:</strong> Revenue retention and expansion from existing customers</li>
+	//       <li><strong>Rule of 40:</strong> Sum of growth rate and free cash flow margin</li>
+	//       <li><strong>Customer Acquisition Cost (CAC) Payback:</strong> Months to recover customer acquisition spending</li>
+	//       <li><strong>Gross Margin:</strong> Indicator of unit economics and scalability</li>
+	//     </ul>
 
-  //     <h3>Corporate Earnings Analysis</h3>
-  //     <p>S&P 500 earnings growth of approximately 8% in the first half exceeded initial expectations, driven by margin expansion rather than revenue acceleration. Technology and communication services sectors contributed disproportionately to aggregate earnings growth.</p>
+	//     <h3>The Profitability Transition</h3>
+	//     <p>Market conditions have forced many software companies to prioritize profitability over growth, resulting in improved operating margins but slower revenue expansion. Companies successfully managing this transition demonstrate disciplined expense management while protecting core product investment.</p>
 
-  //     <p>Earnings quality metrics showed mixed signals, with strong cash flow generation offset by modest revenue growth deceleration in certain cyclical sectors.</p>
+	//     <h3>Artificial Intelligence Impact</h3>
+	//     <p>AI capabilities increasingly differentiate software vendors, with companies effectively integrating AI into products commanding premium valuations. However, AI hype has also created valuation distortions requiring careful fundamental analysis to separate substance from narrative.</p>
 
-  //     <h3>Valuation Levels</h3>
-  //     <p>Equity valuations remain elevated by historical standards, with the S&P 500 trading at approximately 20x forward earnings. This premium valuation partly reflects lower long-term bond yields compared to pre-pandemic norms, but leaves limited margin for disappointment.</p>
+	//     <h3>Valuation Opportunities</h3>
+	//     <p>Current valuations present selective opportunities in:</p>
+	//     <ul>
+	//       <li>Established SaaS platforms with strong net dollar retention trading below historical multiples</li>
+	//       <li>Vertical software companies with defensible niches and recurring revenue</li>
+	//       <li>Infrastructure software providers benefiting from cloud migration tailwinds</li>
+	//     </ul>
 
-  //     <p>International markets trade at meaningful discounts to U.S. equities, though structural factors including sector composition and return on equity differentials explain portions of this gap.</p>
+	//     <h3>Investment Framework</h3>
+	//     <p>We prioritize companies demonstrating strong unit economics, high switching costs, and clear paths to sustainable free cash flow generation. Valuation discipline remains paramount given historical sector volatility.</p>
+	//   `
+	// },
+	// {
+	//   id: "d5f8b3e9",
+	//   title: "Mid-Year Outlook 2025: Reassessing Risk and Return Expectations",
+	//   excerpt: "A comprehensive review of first-half market performance and forward-looking analysis of macroeconomic conditions, earnings trends, and valuation levels across global markets.",
+	//   date: "July 2, 2025",
+	//   category: "Quarterly Review",
+	//   readTime: "18 min read",
+	//   content: `
+	//     <h3>First Half Review</h3>
+	//     <p>The first half of 2025 delivered positive returns across most equity markets despite persistent macroeconomic uncertainty and geopolitical tensions. U.S. large-cap equities led performance, driven by technology sector strength and resilient corporate earnings.</p>
 
-  //     <h3>Second Half Outlook</h3>
-  //     <p>The remainder of 2025 presents a balanced risk-reward profile. Potential positive catalysts include continued disinflation, earnings resilience, and productivity enhancements from technology adoption. Risks encompass policy uncertainty, geopolitical tensions, and potential economic slowdown.</p>
+	//     <h3>Macroeconomic Assessment</h3>
+	//     <p>Global economic growth moderated from 2024 levels but remained positive, with developed markets showing greater resilience than emerging economies. Central bank policy diverged across regions, with the Federal Reserve maintaining elevated rates while some international central banks initiated easing cycles.</p>
 
-  //     <h3>Portfolio Positioning</h3>
-  //     <p>Given this backdrop, we advocate for balanced portfolios emphasizing:</p>
-  //     <ul>
-  //       <li>Quality companies with strong competitive positions</li>
-  //       <li>Reasonable valuation discipline</li>
-  //       <li>Geographic and sector diversification</li>
-  //       <li>Selective exposure to secular growth themes</li>
-  //     </ul>
+	//     <p>Inflation continued its gradual descent toward central bank targets, though progress slowed compared to 2024. Services inflation persistence and potential commodity price volatility present ongoing challenges to sustainable price stability.</p>
 
-  //     <p>Risk management remains paramount in an environment characterized by elevated valuations and persistent macroeconomic uncertainty.</p>
-  //   `
-  // }
+	//     <h3>Corporate Earnings Analysis</h3>
+	//     <p>S&P 500 earnings growth of approximately 8% in the first half exceeded initial expectations, driven by margin expansion rather than revenue acceleration. Technology and communication services sectors contributed disproportionately to aggregate earnings growth.</p>
+
+	//     <p>Earnings quality metrics showed mixed signals, with strong cash flow generation offset by modest revenue growth deceleration in certain cyclical sectors.</p>
+
+	//     <h3>Valuation Levels</h3>
+	//     <p>Equity valuations remain elevated by historical standards, with the S&P 500 trading at approximately 20x forward earnings. This premium valuation partly reflects lower long-term bond yields compared to pre-pandemic norms, but leaves limited margin for disappointment.</p>
+
+	//     <p>International markets trade at meaningful discounts to U.S. equities, though structural factors including sector composition and return on equity differentials explain portions of this gap.</p>
+
+	//     <h3>Second Half Outlook</h3>
+	//     <p>The remainder of 2025 presents a balanced risk-reward profile. Potential positive catalysts include continued disinflation, earnings resilience, and productivity enhancements from technology adoption. Risks encompass policy uncertainty, geopolitical tensions, and potential economic slowdown.</p>
+
+	//     <h3>Portfolio Positioning</h3>
+	//     <p>Given this backdrop, we advocate for balanced portfolios emphasizing:</p>
+	//     <ul>
+	//       <li>Quality companies with strong competitive positions</li>
+	//       <li>Reasonable valuation discipline</li>
+	//       <li>Geographic and sector diversification</li>
+	//       <li>Selective exposure to secular growth themes</li>
+	//     </ul>
+
+	//     <p>Risk management remains paramount in an environment characterized by elevated valuations and persistent macroeconomic uncertainty.</p>
+	//   `
+	// }
 ];
-
