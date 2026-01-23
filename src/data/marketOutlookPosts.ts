@@ -294,6 +294,68 @@ export const outlookPosts: OutlookPost[] = [
         </p>
     `,
 	},
+	{
+    id: "19bed04d",
+    title: "Market Recap | Week of January 19, 2026",
+    excerpt: "Markets remained cautious amid rising geopolitical uncertainty, with volatility easing after early-week tariff fears and investors rotating toward safe havens like gold, silver, and energy. Weak forward guidance from Intel added to concerns about corporate returns in a fragmented global economy.",
+    date: "January 23, 2026",
+    category: "Weekly Market Recap",
+    readTime: "2 min read",
+	sources:[
+		"Davos 2026: How middle powers are reading the global moment. World Economic Forum. (2026, January 22). https://www.weforum.org/stories/2026/01/davos-2026-how-middle-powers-are-reading-the-global-moment/",
+		"Cgtn. (2026, January 20). Davos 2026 calls for dialogue amid rising global risks, slowing growth. CGTN. https://news.cgtn.com/news/2026-01-20/Davos-2026-calls-for-dialogue-amid-rising-global-risks-slowing-growth-1K5V7hEfbzO/index.html",
+		"Devitt, P. (2026, January 23). Speculative frenzy catapults silver above $100/oz | Reuters. Reuters. https://www.reuters.com/world/india/gold-silver-platinum-extend-recordsetting-rally-2026-01-23/",
+		"Natural-Gas Prices Soar Before Arctic Blast. The Wall Street Journal. (2026, January 23). https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-23-2026/card/natural-gas-prices-soar-before-arctic-blast-bfOaiIpmqBksC5A5lFK4",
+		"Silver price Today: Price of Silver per ounce: 24 Hour spot chart. KITCO. (n.d.). https://www.kitco.com/charts/silver",
+		"Gold Price. (n.d.). Live gold price. https://goldprice.org/live-gold-price.html",
+		"Google. (n.d.). SPDR S&P 500 ETF Trust (SPY) price & news. Google Finance. https://www.google.com/finance/quote/SPY:NYSEARCA?window=5D",
+		"Google. (n.d.-a). Invesco QQQ Trust, Series 1 (QQQ) Price & News. Google Finance. https://www.google.com/finance/quote/QQQ:NASDAQ?window=5D",
+		"Google. (n.d.-b). iShares Russell 2000 ETF (IWM) price & news. Google Finance. https://www.google.com/finance/quote/IWM:NYSEARCA?window=5D",
+		"Intel reports fourth-quarter and full-year 2025 financial results. Intel Corporation. (n.d.). https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial"
+	],
+    content: `
+      	<table style="border-collapse:collapse;width:100%;text-align:center;font-family:Arial,sans-serif;">
+			<tr>
+				<td style="padding:8px 16px;border:none;font-size:14px;">SPY -0.63%</td>
+				<td style="padding:8px 16px;border:none;font-size:14px;">QQQ -0.42%</td>
+				<td style="padding:8px 16px;border:none;font-size:14px;">IWM -0.35%</td>
+			</tr>
+		</table>
+
+		<h3>Davos Sets the Macro Tone</h3>
+		<p>
+			At the World Economic Forum in Davos, leaders from middle powers framed the current geopolitical environment as <strong>"a rupture, not a transition,"</strong> emphasizing that the old rules-based order no longer provides reliable predictability. Officials stressed that relying on the old system to return isn't a viable strategy; instead, nations must build <strong>sovereignty through resilience, competitiveness, and strategic coalitions</strong> in a fragmented global economy. These discussions reinforced cautious investor positioning and highlighted structural uncertainties affecting trade, policy, and economic cooperation.
+		</p>
+		</div>
+
+		<div>
+		<h3>Geopolitical Tensions Drive Early Week Volatility</h3>
+		<p>
+			Markets reacted sharply to renewed U.S.–Europe tensions over Greenland. President Trump’s tariff threats spooked investors, pushing the CBOE Volatility Index (VIX) above <strong>20</strong>. Once Washington softened the tariff stance, the VIX fell back below key levels, reflecting reduced near-term fear while investors remained cautious.
+		</p>
+		</div>
+
+		<div>
+		<h3>Safe-Haven Rush: Gold and Silver Hit New Milestones</h3>
+		<p>
+			Amid geopolitical uncertainty and a slightly weaker U.S. dollar, gold surged toward <strong>$5,000 per ounce</strong>, while silver climbed above <strong>$100 per ounce</strong>, marking historic highs for both metals. The rally reflected strong demand for defensive assets amid global uncertainty.
+		</p>
+		</div>
+
+		<div>
+		<h3>Energy Stocks Surge on Natural Gas Rally</h3>
+		<p>
+			Energy markets contributed to weekly gains as <strong>natural gas prices spiked sharply amid an intense Arctic blast across the U.S.</strong> Natural gas futures climbed toward <strong>$5 per MMBtu</strong>, marking one of the largest weekly rallies in decades.
+		</p>
+		</div>
+
+		<div>
+		<h3>Intel Q4 2025 Earnings Recap</h3>
+		<p>
+			Intel reported <strong>$13.7 billion in Q4 revenue</strong> and <strong>EPS of $0.15</strong>, slightly above expectations, but weak <strong>Q1 guidance of $11.7–$12.7 billion revenue</strong> and break-even EPS sent its stock <strong>down 17%</strong>. Client Computing Group fell <strong>7% to $8.2 billion</strong>, while Data Center & AI grew <strong>9% to $4.7 billion</strong>, showing some AI demand but not enough to offset broader margin pressure. The sell-off underscores concerns that <strong>heavy investment isn’t yet translating into expected returns</strong>.
+		</p>
+    `
+  }
 	// {
 	//   id: "cb8a7fe1",
 	//   title: "Q4 2025 Market Review: Navigating Rate Uncertainty",
