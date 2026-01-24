@@ -1,5 +1,4 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 import { layout, typography, components } from '@/styles';
 import { outlookPosts } from '@/data';
 import { extractIdFromSlug } from '@/utils';
@@ -67,7 +66,7 @@ export function MarketOutlookPostPage() {
 
       {/* Related Posts Section */}
       <section className={layout.section.default}>
-        <div className="max-w-4xl mx-auto px-8">
+        <div className="max-w-4xl mx-auto px-8" style={{paddingBottom:"8px"}}>
           <h3 className={typography.heading.h3 + ' mb-6'}>More from Market Outlook</h3>
           <div className="grid gap-6">
             {outlookPosts
@@ -82,23 +81,22 @@ export function MarketOutlookPostPage() {
                   .trim();
                 
                 return (
-                  <Link
+                  <div style={{"paddingBottom":"8px", "paddingTop":"16px"}}>
+                    <Link
                     key={relatedPost.id}
                     to={`/market-outlook/${relatedSlug}-${relatedPost.id}`}
-                    className={layout.card.hoverable + ' block'}
+                    className="layout.card.hoverable + ' block'"
                   >
                     <div className={typography.meta + ' flex items-center gap-3 mb-3'}>
                       <span className={typography.accent}>{relatedPost.category}</span>
-                      <span>•</span>
+                      <pre> <small>•</small> </pre>
                       <span>{relatedPost.date}</span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2 text-[var(--color-charcoal)]">
+                    <div className="text-xl font-semibold mb-2 text-[var(--color-charcoal)]">
                       {relatedPost.title}
-                    </h3>
-                    <p className={typography.body.default + ' line-clamp-2'}>
-                      {relatedPost.excerpt}
-                    </p>
+                    </div>
                   </Link>
+                  </div>
                 );
               })}
           </div>
