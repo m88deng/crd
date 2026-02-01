@@ -355,6 +355,42 @@ export const outlookPosts: OutlookPost[] = [
 			Intel reported <strong>$13.7 billion in Q4 revenue</strong> and <strong>EPS of $0.15</strong>, slightly above expectations, but weak <strong>Q1 guidance of $11.7–$12.7 billion revenue</strong> and break-even EPS sent its stock <strong>down 17%</strong>. Client Computing Group fell <strong>7% to $8.2 billion</strong>, while Data Center & AI grew <strong>9% to $4.7 billion</strong>, showing some AI demand but not enough to offset broader margin pressure. The sell-off underscores concerns that <strong>heavy investment isn’t yet translating into expected returns</strong>.
 		</p>
     `
+  },
+  {
+    id: "19c173b9",
+    title: "Market Recap | Week of January 26, 2026",
+    excerpt: "The Federal Reserve held interest rates steady amid persistent inflation and solid economic growth, while gold and silver pulled back after record gains. Big tech showed mixed results, with Meta and Apple beating expectations and Microsoft facing margin concerns. SanDisk stands out, benefiting from AI-driven memory demand and supply constraints expected to last through 2028.",
+    date: "January 31, 2026",
+    category: "Weekly Market Recap",
+    readTime: "3 min read",
+	sources:[
+		"Gold Price. (n.d.). Live gold price. https://goldprice.org/live-gold-price.html",
+		"Google. (n.d.). SPDR S&P 500 ETF Trust (spy) price & news. Google Finance. https://www.google.com/finance/quote/SPY:NYSEARCA?window=5D",
+		"Google. (n.d.-a). Invesco QQQ Trust, series 1 (QQQ) Price & News. Google Finance. https://www.google.com/finance/quote/QQQ:NASDAQ?window=5D",
+		"Google. (n.d.-b). IShares russell 2000 ETF (IWM) price & news. Google Finance. https://www.google.com/finance/quote/IWM:NYSEARCA?window=5D",
+		"Christensen, N. (2026, January 30). Gold, silver selloff was inevitable after January’s explosive rally, but broader trend remains intact. Kitco News. https://www.kitco.com/news/article/2026-01-30/gold-silver-selloff-was-inevitable-after-januarys-explosive-rally-broader?utm_source=site_navigation&utm_medium=sidebar_link&utm_campaign=latest_news&utm_term=gold_ab_sidebar_news",
+		"Fed Funds Rate Today. Fed Funds Rate Today | Real-Time Fed Funds Rate Updates. (n.d.). https://www.fedfundrate.org/",
+		"Nellis, S., & Sriram, A. (2026, January 29). Apple forecasts strong sales growth as iPhone demand in Asia rebounds | Reuters. Reuters. https://www.reuters.com/business/apple-sales-profit-beat-wall-street-estimates-amid-staggering-iphone-demand-2026-01-29/",
+		"Sandisk surges as robust AI demand powers blowout forecast | Reuters. Reuters. (2026, January 30). https://www.reuters.com/business/sandisk-surges-robust-ai-demand-powers-blowout-forecast-2026-01-30/",
+		"Soni, A., & Sophia, D. M. (2026, January 29). Microsoft plunges, meta rallies as investors demand AI payoffs | Reuters. Reuters. https://www.reuters.com/business/autos-transportation/investors-punish-big-tech-ai-spending-that-delivers-slower-growth-2026-01-29/",
+		"Sophia, D. M., Soni, A., & Nellis, S. (2026, January 28). Microsoft capital spending jumps, cloud revenue fails to impress, shares drop after hours | reuters. Reuters. https://www.reuters.com/business/retail-consumer/microsoft-edges-past-cloud-growth-expectations-2026-01-28/ ",
+
+
+	],
+    content: `
+      <h3>Federal Reserve Holds Rates Steady</h3>
+		<p>On Wednesday, the Federal Reserve held its key interest rate steady, keeping the federal funds rate at 3.50%–3.75%, rather than cutting again, as inflation remains above target and economic growth has stayed solid. Markets reacted with a muted move in stocks and bonds, as traders had largely priced in the pause and focused on the Fed’s cautious messaging about future cuts.</p>
+	<h3>Gold and Silver Pull Back After Record Gains</h3>
+		<p>After months of record-breaking gains in gold and silver—both metals surging sharply higher earlier in January—the recent selloff was widely seen as almost inevitable once prices became extremely overextended. According to Kitco, gold and silver had risen so fast that profit-taking and a reversal in trader positioning made a sharp correction likely, even though the longer-term bullish trend remains intact. Pullbacks like this often occur after parabolic rallies, especially when markets reassess expectations around monetary policy and the U.S. dollar.</p>
+	<h3>Meta Delivers Strong Quarter and AI Investment Plans</h3>
+		<p>Meta reported higher-than-expected revenue and earnings, with revenue up about 24% to roughly $59.9 billion and earnings per share of $8.88, surpassing analyst forecasts. Strong performance in its advertising and AI-driven businesses contributed to the results, and the company issued bullish guidance for early 2026 revenue, forecasting growth could accelerate up to 33% in the current quarter, which pushed the stock higher after the report. Meta also announced a significant capital expenditure plan for AI infrastructure this year, signaling a long-term investment focus that investors responded to positively.</p>
+	<h3>Microsoft Sees Stock Dip Despite Revenue Growth</h3>
+		<p>Microsoft saw its stock fall after reporting fiscal second-quarter revenue of $81.3 billion, up roughly 17% year over year, as the company highlighted elevated AI-related capital spending and delivered cloud growth that only modestly exceeded expectations. While Azure and other cloud services grew 39%, investors focused on rising infrastructure costs’ impact on near-term margins and the timing of returns from those investments. This reaction reflects a broader shift in sentiment across the software sector, where several large names—such as Oracle, Adobe, and Salesforce (CRM)—have also come under pressure recently.</p>
+	<h3>Apple Reports Robust Earnings and Strong iPhone Demand</h3>
+		<p>Apple beat Wall Street estimates with $143.8 billion in revenue, driven by record-setting iPhone sales that reached $85.3 billion, up about 23% year over year, along with strong results across services and international markets. CEO Tim Cook described iPhone demand as “staggering.” Apple maintained a healthy gross margin of around 48.2% while projecting continued double-digit revenue growth in the upcoming quarter. Rising memory chip costs, however, could put some pressure on margins going forward.</p>
+	<h3>SanDisk Capitalizes on AI-Driven Memory Demand</h3>
+		<p>SanDisk has been a standout in the memory and storage sector, as AI-driven demand tightens supply and lifts pricing power for NAND flash and enterprise storage—the type of memory increasingly prioritized by data centers building AI infrastructure. Its shares rallied sharply after projecting third-quarter profit and revenue well above analysts’ estimates, reflecting robust demand tied to AI workloads and constrained supply for high-capacity storage products. Morningstar analysts expect supply constraints to endure until at least 2028, which could generate significant growth for SanDisk. Rising memory chip costs, noted by Apple, are squeezing some tech producers, but SanDisk is benefiting from strong AI-related storage demand.</p>
+    `
   }
 	// {
 	//   id: "cb8a7fe1",
